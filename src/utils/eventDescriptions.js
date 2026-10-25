@@ -4,8 +4,8 @@ const eventDescriptions = {
     'PushEvent': ({ repo, isPrivate, payload }) => {
         const commitSha = payload.head;
         return isPrivate
-            ? `${eventEmojiMap['PushEvent']} Committed to a private repo`
-            : `${eventEmojiMap['PushEvent']} Committed to [${repo.name}](https://github.com/${repo.name}/commit/${commitSha})`;
+            ? `${eventEmojiMap['PushEvent']} Pushed to a private repo`
+            : `${eventEmojiMap['PushEvent']} Pushed to [${repo.name}](https://github.com/${repo.name}/commit/${commitSha})`;
     },
 
     'CreateEvent': ({ repo, isPrivate, payload, hideDetailsOnPrivateRepos }) => {
