@@ -34,6 +34,7 @@ A GitHub Action that automatically updates your README file with the latest acti
 - Custom Commit Messages
 - Markdown or HTML Output Styles
 - Hide Details on Private Repositories
+- Runs on a schedule with GitHub Actions (cron) to keep the log up to date
 
 ## ✍️ Example
 
